@@ -1,0 +1,125 @@
+/*************** 
+Base Elements 
+****************/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	color: #666;
+	font-family: 'Questrial', san-serif;
+}
+ 
+h2 {
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+p, h3 {
+	font-size: 0.8em;
+}
+
+/*************** 
+ Layout
+****************/
+.movie-image {
+	position: absolute;
+	top: 1em; 
+	left: 1em;
+	width: 200px;
+	min-height:225px;
+	border-radius: 5px;
+	background-image:url(http://webdesignertroy.com/dump/blank-200a.jpg);
+}
+
+.movie-description {
+	text-align: left;
+	margin-left: 220px;
+}
+a.poster-link {
+	text-decoration: none;
+	background: #FF4A00;
+	font-weight: 300;
+	font-size: 0.8em;
+	text-align: center;
+	color: #fff;
+	padding: 0.5em;
+	border-radius: 7px;
+	transition: 0.5s all;
+	margin-top: 20px;
+	display: block;
+	max-width: 100px;
+}
+a.poster-link:hover {
+	background: #6A6AA6;
+}
+.section {
+	position: relative;
+	margin: 3em 10px 3em 0;
+	padding: 1em;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	background: #FCFAFA;
+	overflow: hidden;
+	
+}
+
+/*************** 
+ Page Elements
+****************/
+.wrapper  {
+	width: 100%;
+}
+.container {
+	margin: 20px auto;
+	max-width: 980px;
+	text-align: center;
+}
+
+/*************** 
+Form Class/Elments 
+****************/
+
+.button {
+	background: #1A1A59;
+	color: #fff;
+	outline: none;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin: 0 8px;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s all;
+	
+}
+.button:hover {
+	background: #343477;
+}
+
+input[type=text] {
+	border-radius: 5px;
+	border: solid 2px #1A1A59;
+	padding: 6px 10px;
+	outline: none;
+	transition: 0.7s all;
+}
+input[type=text]:focus {
+	border: solid 2px #F20004;
+}
+
+/*************** 
+Layout Fixes 
+****************/
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+.fixed {
+    position: fixed;
+    font-size: 2em;
+    top: 45vh;
+    display: block;
+    width: 100%;
+    left: 0;
+}
